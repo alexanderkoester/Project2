@@ -73,6 +73,30 @@ padding-top: 20px;
     padding-top: 10px;
   }
 
+  .right-container {
+    display: grid; 
+    grid-template-columns: 1.9fr 1.2fr 1.2fr; 
+    gap: 0px 5px; 
+  }
+
+  .right-container h1{
+    font-family: eds-market-regular-slant, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 350%;
+  }
+
+  .right-container p {
+    font-family: acumin-pro-semi-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+  }
+
   .content {
       animation: fadein ease 4s;
       animation-fill-mode: both;
@@ -80,12 +104,19 @@ padding-top: 20px;
       background-color: rgb(235, 235, 235) ;
   }
 
+  .right-container, .marker {
+padding-left: 20px;
+  }
+
 .marker {
     animation: markeranimation ease 5s;
-    animation-fill-mode: both;
-    
+    animation-fill-mode: both;   
 }
 
+.homebutton {
+    text-align: center;
+    padding-top: 30px;
+}
 
 .button{
     
