@@ -35,13 +35,16 @@ padding-top: 20px;
 }
 
 .hometitle {
+    animation: fadein ease 5s;
+
     padding-top: 80px;
     grid-template-rows: 50px;
 }
 
 .homekrink, .homearteza, .homemolotow, .homeposca  {
     
-    transform: translateY(-60%);
+    animation: homemarkers ease 4s;
+    animation-fill-mode: both;
 }
 
 .index-container img:hover { 
@@ -140,7 +143,11 @@ padding-left: 20px;
         background-color:#4dc5db;
         }
       
-
+@keyframes homemarkers {
+    0%{transform: translateY(-160%);}
+    100%{transform: translateY(-60%);}
+    
+}
 
 @keyframes markeranimation {
 
