@@ -3,10 +3,9 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     
-    cursor: url(images/Untitled-1.png), auto;
+    cursor: url(images/Untitled-1.png), auto; 
     
-    
-}
+  }
 
 
 
@@ -160,6 +159,16 @@ padding-left: 20px;
         color:#ffffff;
         border:0.1em solid #4dc5db;
         background-color:#4dc5db;
+        }
+
+
+        #myCanvas {
+          
+          position: absolute;
+          top: 0;
+          left: 0;
+          
+
         }
       
 @keyframes homemarkers {
