@@ -114,7 +114,7 @@ function animatePoints() {
       //Math.floor(200 - (139 * dec)) + ',' +
      // Math.floor(255 - (0 * inc)) + ')';
 
-     context.strokeStyle = 'rgb(100, 201, 45)';
+     context.strokeStyle = 'rgb(77, 103, 235)';
 
     var distance = Point.distance(lastPoint, point);
     var midpoint = Point.midPoint(lastPoint, point);

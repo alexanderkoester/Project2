@@ -52,9 +52,35 @@
 <div class="footertext">Designed by Alex Koester | akoester@pdx.edu | 2022</div>
 </div>
 
+<audio id="pen-sound">
+  <source src="squeak.wav"></source>
+</audio>
 
 
 <script src="script.js"></script>
+
+<!-- squeek on hover -->
+
+<script>
+  var pen = $("#pen-sound")[0];
+  
+$("body").mouseenter(function() {
+  pen.currentTime = 0;
+  pen.play();
+  pen.volume = 0.1;
+});
+    $("body").mouseleave(function() {
+  pen.pause();
+});
+</script>
+
+<!-- Background image change -->
+
+<script>
+  setTimeout(function(){
+    $('body').css('background-image','url(background2.png)')
+}, 3000);
+</script>
 
 
 
