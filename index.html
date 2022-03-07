@@ -79,18 +79,12 @@ $("img").not("#footer").mouseenter(function() {
 <script>
 function rotateBg(){
   setTimeout(function(){
-    $('body').css('background-image',`url('images/p2_background2.png')`)
+    $('body').css('background-image',`url('images/p2_background4.png')`)
   }, 3000);
-    setTimeout(function(){
-      $('body').css('background-image',`url('images/p2_background3.png')`)
-  }, 6000);
-    setTimeout(function(){
-      $('body').css('background-image',`url('images/p2_background4.png')`)
-  }, 9000);
     setTimeout(function(){
       $('body').css('background-image',`url('images/p2_background.png')`)
       rotateBg();
-  }, 12000);
+  }, 6000);
 }
 $(rotateBg())
 </script>

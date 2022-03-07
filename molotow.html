@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/wij0sww.css" />
   </head>
-  <body>
+  <body class="subpage">
+    <canvas id="myCanvas"></canvas>
+    
     <div class="molotowpage"></div>
 
     <div class="right-container">
@@ -42,7 +44,24 @@
       </div>
     </div>
 
-    <canvas id="myCanvas"></canvas>
+
     <script src="script.js"></script>
+
+    <!-- Background image change -->
+
+<script>
+  function rotateBg(){
+    setTimeout(function(){
+      $('body').css('background-image',`url('images/p2_background4.png')`)
+    }, 3000);
+      setTimeout(function(){
+        $('body').css('background-image',`url('images/p2_background.png')`)
+        rotateBg();
+    }, 6000);
+  }
+  $(rotateBg())
+  </script>
+
+  
   </body>
 </html>
