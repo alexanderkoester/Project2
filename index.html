@@ -48,7 +48,7 @@
 </div>
 
 <div class="footer">
-<p><img src="images/footer.png" alt=""></p>
+<p><img id="footer" src="images/footer.png" alt=""></p>
 <div class="footertext">Designed by Alex Koester | akoester@pdx.edu | 2022</div>
 </div>
 
@@ -64,12 +64,12 @@
 <script>
   var pen = $("#pen-sound")[0];
   
-$("body").mouseenter(function() {
+$("img").not("#footer").mouseenter(function() {
   pen.currentTime = 0;
   pen.play();
   pen.volume = 0.1;
 });
-    $("body").mouseleave(function() {
+    $("img").mouseleave(function() {
   pen.pause();
 });
 </script>
@@ -77,9 +77,22 @@ $("body").mouseenter(function() {
 <!-- Background image change -->
 
 <script>
+function rotateBg(){
   setTimeout(function(){
-    $('body').css('background-image','url(background2.png)')
-}, 3000);
+    $('body').css('background-image',`url('images/p2_background2.png')`)
+  }, 3000);
+    setTimeout(function(){
+      $('body').css('background-image',`url('images/p2_background3.png')`)
+  }, 6000);
+    setTimeout(function(){
+      $('body').css('background-image',`url('images/p2_background4.png')`)
+  }, 9000);
+    setTimeout(function(){
+      $('body').css('background-image',`url('images/p2_background.png')`)
+      rotateBg();
+  }, 12000);
+}
+$(rotateBg())
 </script>
 
 
